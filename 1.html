@@ -3,9 +3,37 @@
 <head>
 	<meta charset="utf-8">
 	<title>title</title>
+	<script>
+		function input(){
+			var input = document.getElementById("input").value; 
+			var check = document.getElementsByName("rdoSample");
+			var i=0;
+			var trueCheck=0;
+				while(i<check.length)
+				{
+					if(check[i].checked)
+						trueCheck=check[i];
+					i++;
+				}
+			a = input;
+			alert(a+":"+trueCheck.value+"번 예제");
+		}
+	</script>
+
 	<style>
 		body{
-			font-size:200%;
+			size:200%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.btr{
+			padding:2px 4px 2px 4px;
+			color:white;
+			background-color: #1f75d9;
+			border-bottom: 5px solid #165195;
+			border-right: 2px solid #165195;
+			text-shadow: 2px 1px rgba(0,0,0,0.44);
 		}
 	</style>
 </head>
@@ -37,12 +65,19 @@
 			i++;
 		}
 	}">
-	<input type="text" onchange="alert('change')">
+	<input type="text" id="input" onchange="input()">
+	<INPUT TYPE=RADIO name=rdoSample VALUE=1 CHECKED> 1번 예제
+	<INPUT TYPE=RADIO name=rdoSample VALUE=2> 2번 예제
+	<INPUT TYPE=RADIO name=rdoSample VALUE=3> 3번 예제
+	<INPUT TYPE=RADIO name=rdoSample VALUE=4> 4번 예제
+	<INPUT TYPE=RADIO name=rdoSample VALUE=5> 5번 예제
 	<ul>
 	<li><a href="3.html">1.html</a></li>
 	<li class="saw">2.css</li>
 	<li>3.javascript</li>
 	</ul>
 	<p>가나다라마바사</p>
-	<p><a href="https://www.google.co.kr/">구글</a></p>
+	<p><a class="btr" href="https://www.google.co.kr/">구글</a></p>
+	<p><a class="btr" href="http://sugang.gnu.ac.kr/sugang/">수강신청</a></p>
+	<P><a class="btr" href="https://www.gnu.ac.kr/program/multipleboard/BoardList.jsp?groupNo=10027">학사공지</a></P>
 </body>
