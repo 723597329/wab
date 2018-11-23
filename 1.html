@@ -3,72 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>title</title>
-	<script>
-		function input(){
-			var input = document.getElementById("input").value; 
-			var check = document.getElementsByName("rdoSample");
-			var i=0;
-			var trueCheck=0;
-				while(i<check.length)
-				{
-					if(check[i].checked)
-						trueCheck=check[i];
-					i++;
-				}
-			a = input;
-			alert(a+":"+trueCheck.value+"번 예제");
-		}
-	</script>
-
-	<style>
-		body{
-			size:200%;
-		}
-		a{
-			text-decoration: none;
-		}
-		.btr{
-			padding:2px 4px 2px 4px;
-			color:white;
-			background-color: #1f75d9;
-			border-bottom: 5px solid #165195;
-			border-right: 2px solid #165195;
-			text-shadow: 2px 1px rgba(0,0,0,0.44);
-		}
-		.tree input[type="checkbox"]:checked~ul{
-			display:none;
-		}
-	</style>
+	<link href="1.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 	<h1>웹</h1>
-	<input type="button" value="black" onclick=
-	"var target=document.querySelector('body');
-	var links= document.querySelectorAll('a');
-	if(this.value==='black')
-	{
-		target.style.backgroundColor='black';
-		target.style.color='white';
-		this.value='white';
-		var i=0;
-		while(i<links.length)
-		{
-			links[i].style.color='red';
-			i++;
-		}
-	}else
-	{
-		target.style.backgroundColor='white';
-		target.style.color='black';
-		this.value='black';
-		var i=0;
-		while(i<links.length)
-		{
-			links[i].style.color='blue';
-			i++;
-		}
-	}">
-	<input type="text" id="input" onchange="input()">
+	<input type="button" value="black" id="bg_Button">
+	<input type="text" id="input">
 	<INPUT TYPE=RADIO name=rdoSample VALUE=1 CHECKED> 1번 예제
 	<INPUT TYPE=RADIO name=rdoSample VALUE=2> 2번 예제
 	<INPUT TYPE=RADIO name=rdoSample VALUE=3> 3번 예제
@@ -78,7 +18,7 @@
 	<li><a href="3.html">1.html</a></li>
 	<li class="saw">2.css</li>
 	<li>3.javascript</li>
-	<li><a href="부트스트랩 연습.html">부트스트랩</a></li>
+	<li><a href="bootstrap.html">부트스트랩</a></li>
 	</ul>
 	<p>가나다라마바사</p>
 	<p><a class="btr" href="https://www.google.co.kr/">구글</a></p>
@@ -89,18 +29,20 @@
 		<input type="checkbox" id="root">
 		<labal for="root">root</labal>
 			<ul>
-				<li>node1</li>
-				<li>node2</li>
+				<li>
+				</li>
+				<li>{{ name }}</li>
 				<li>
 					<input type="checkbox" id="node3">
 					<label for="node3"></label>
 					<ul>
-						<li>node3-1</li>
-						<li>node3-2</li>
-						<li>node3-3</li>
+						<li>{{ name }}</li>
+						<li>{{ name }}</li>
+						<li>{{ name }}</li>
 					</ul>
 				</li>
 			</ul>
 		</li>
 	</ul>
+	<script type="text/javascript" src="1.javascript"></script>
 </body>
