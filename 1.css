@@ -1,17 +1,20 @@
-body{
-			size:200%;
-		}
-		a{
-			text-decoration: none;
-		}
-		.btr{
-			padding:2px 4px 2px 4px;
-			color:white;
-			background-color: #1f75d9;
-			border-bottom: 5px solid #165195;
-			border-right: 2px solid #165195;
-			text-shadow: 2px 1px rgba(0,0,0,0.44);
-		}
-		.tree input[type="checkbox"]:checked~ul{
-			display:none;
-		}
+a{
+	text-decoration: none;
+}
+.btr{
+	padding:2px 4px 2px 4px;
+	color:white;
+	background-color: #1f75d9;
+	border-bottom: 5px solid #165195;
+	border-right: 2px solid #165195;
+	text-shadow: 2px 1px rgba(0,0,0,0.44);
+}
+.tree input[type="checkbox"]:checked~ul{
+	display:none;
+}
+form{
+	display: none;
+}
+.showing{
+	display: block;
+}
