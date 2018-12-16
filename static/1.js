@@ -52,8 +52,8 @@ function timeroad(){
 	let date= new Date();
 	let hours=date.getHours();
 	let minute=date.getMinutes();
-	let nowtime=`${hours}:${minute}`;
-	document.querySelector('h1').innerText=`웹 ${nowtime}`;
+	let nowtime=hours+':'+minute;
+	document.querySelector('h1').innerText='웹'+nowtime;
 	return nowtime
 }
 function init(){
