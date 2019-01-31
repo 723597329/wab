@@ -1,10 +1,10 @@
-<<<<<<< HEAD
+<<<<<<< HEAD:static/1.css
 a{
 	text-decoration: none;
 }
 .btr{
 	padding:2px 4px 2px 4px;
-	color:white;
+	color:rgb(255, 255, 255);
 	background-color: #1f75d9;
 	border-bottom: 5px solid #165195;
 	border-right: 2px solid #165195;
@@ -19,7 +19,7 @@ form{
 .showing{
 	display: block;
 }
-@keyframes fadeIn(){
+@keyframes fadeIn{
 	from{
 		opacity: 0
 	}to{
@@ -74,4 +74,4 @@ form{
 	animation: fadeIn 0.5 linear;
 }
 
->>>>>>> parent of d74da85... 커밋
+>>>>>>> parent of d74da85... 커밋:1.css
