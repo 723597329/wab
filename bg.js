@@ -6,7 +6,7 @@ const IMAGECOUNT=3;
 
 function paintImage(imagenumber){
 	const image=new Image();
-	image.src='static/image/'+(imagenumber+1)+'.jpg';
+	image.src='image/'+(imagenumber+1)+'.jpg';
 	image.classList.add('bgImage');
 	body.appendChild(image);
 }
